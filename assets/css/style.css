@@ -23,7 +23,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -158,7 +163,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 #header.header-scrolled {
@@ -172,12 +176,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 #header .logo a {
   color: #2c4964;
 }
 #header .logo img {
   max-height: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 /**
@@ -229,7 +236,8 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   padding: 8px 0 8px 20px;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -240,12 +248,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #fff;
   padding: 5px 2px;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #1977cc;
   border-color: #1977cc;
 }
@@ -277,7 +289,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #1977cc;
 }
 .navbar .dropdown:hover > ul {
@@ -360,16 +374,20 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile > ul > li {
   padding: 0;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #2c4964;
   border: none;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #1977cc;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -392,7 +410,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #1977cc;
 }
 .navbar-mobile .dropdown > .dropdown-active {
@@ -404,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 750px;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   margin-bottom: -200px;
@@ -442,11 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started:hover {
   background: #3291e6;
 }
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
+
 @media (max-width: 992px) {
   #hero {
     margin-bottom: 0;
@@ -591,7 +607,7 @@ section {
 }
 .why-us .content .more-btn {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(0 193 255);
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 50px;
@@ -630,6 +646,8 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+}
 .about .icon-boxes h4 {
   font-size: 18px;
   color: #4b7dab;
@@ -885,7 +903,8 @@ section {
 .services .icon-box:hover .icon::before {
   background: #3291e6;
 }
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
   color: #fff;
 }
 
@@ -942,22 +961,27 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.appointment .php-email-form input, .appointment .php-email-form textarea, .appointment .php-email-form select {
+.appointment .php-email-form input,
+.appointment .php-email-form textarea,
+.appointment .php-email-form select {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   padding: 10px !important;
 }
-.appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
+.appointment .php-email-form input:focus,
+.appointment .php-email-form textarea:focus,
+.appointment .php-email-form select:focus {
   border-color: #1977cc;
 }
-.appointment .php-email-form input, .appointment .php-email-form select {
+.appointment .php-email-form input,
+.appointment .php-email-form select {
   height: 44px;
 }
 .appointment .php-email-form textarea {
   padding: 10px 12px;
 }
-.appointment .php-email-form button[type=submit] {
+.appointment .php-email-form button[type="submit"] {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -965,7 +989,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-.appointment .php-email-form button[type=submit]:hover {
+.appointment .php-email-form button[type="submit"]:hover {
   background: #1c84e3;
 }
 
@@ -1026,6 +1050,7 @@ section {
 # Doctors
 --------------------------------------------------------------*/
 .doctors {
+  padding: 48px 0 24px 0;
   background: #fff;
 }
 .doctors .member {
@@ -1038,7 +1063,14 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 300px;
+}
+
+.doctors .member .pic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
 .doctors .member .member-info {
@@ -1098,7 +1130,6 @@ section {
 .doctors .member .social a + a {
   margin-left: 8px;
 }
-
 /*--------------------------------------------------------------
 # New Patients
 --------------------------------------------------------------*/
@@ -1252,13 +1283,13 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
   background: #fff;
+  display: flex;
 }
 .contact .info i {
   font-size: 20px;
@@ -1286,10 +1317,14 @@ section {
   font-size: 14px;
   color: #4b7dab;
 }
-.contact .info .email, .contact .info .phone {
+.contact .info .address,
+.contact .info .email,
+.contact .info .phone {
   margin-top: 40px;
 }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #1977cc;
   color: #fff;
 }
@@ -1337,7 +1372,8 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1348,7 +1384,7 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -1356,7 +1392,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #1c84e3;
 }
 @-webkit-keyframes animate-loading {
@@ -1464,12 +1500,12 @@ section {
   text-align: left;
   border: 1px solid #bfdcf7;
 }
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1483,7 +1519,7 @@ section {
   transition: 0.3s;
   border-radius: 50px;
 }
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #1c84e3;
 }
 #footer .credits {
@@ -1511,9 +1547,6 @@ section {
   text-decoration: none;
 }
 
-
-
-
 /* PRESENT DAY STYLES */
 .open {
   color: rgb(241, 207, 93);
@@ -1522,28 +1555,18 @@ section {
   color: rgba(190, 25, 13, 0.884);
 }
 
-
 .opening-hours {
-background: transparent ; 
-padding: 40px 14px;
-margin-top: -15px;
-position: relative;
+  background: transparent;
+  padding: 40px 14px;
+  margin-top: -15px;
+  position: relative;
 }
-
 
 .opening-hours .title {
-font-size: 20px;
-color: rgb(255, 255, 255);
-text-transform: uppercase;
-padding-left: 5px;
-
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
-.opening-hours_day li{
-  display: flex;
-  justify-content: space-between;
-color: rgb(255, 255, 255);
-line-height: 30px;
-border-bottom: 1px solid rgb(253, 250, 250); 
+li.opening-hours_days {
+  margin: 10px 0;
 }
-
-
