@@ -191,7 +191,7 @@ h6 {
 * Appointment Button *
 */
 .appointment-btn {
-  margin-left: 25px;
+  margin-left: 12px;
   background: #1977cc;
   color: #fff;
   border-radius: 50px;
@@ -425,7 +425,7 @@ h6 {
 #hero {
   width: 100%;
   height: 750px;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url(../img/hero-bg.jpg) center;
   background-size: cover;
   margin-bottom: -200px;
 }
@@ -844,8 +844,7 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #d5e1ed;
-  padding: 80px 20px;
+  padding: 45px;
   transition: all ease-in-out 0.3s;
 }
 .services .icon-box .icon {
@@ -1569,4 +1568,13 @@ section {
 }
 li.opening-hours_days {
   margin: 10px 0;
+}
+
+.rating-btn {
+  display: flex;
+  margin-left: 24px;
+}
+
+.rating-btn i {
+  margin: 0 5px 0 0;
 }
