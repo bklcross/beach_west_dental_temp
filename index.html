@@ -358,17 +358,12 @@
       <div class="container-fluid">
 
         <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-
-          </div>
-
-          <div
-            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+          <div class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3>New Patient Forms</h3>
             <p>
               Please fill up the form for a new patients. </p>
 
-
+          <div>
             <div class="icon-box">
               <div class="icon"><i class="far fa-file-alt"></i></div>
               <h4 class="title"><a href="">New Patient Information</a></h4>
@@ -389,6 +384,7 @@
               <p class="description">In order to view or print these forms you will need Adobe Acrobat Reader installed.
               </p>
             </div>
+          </div>
 
           </div>
         </div>
@@ -406,7 +402,7 @@
             contact you to confirm your appointment.</p>
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <form target="_blank" action="https://formsubmit.co/bklcross@gmail.com" method="POST" class="appointment-form ">
           <div class="row">
             <div class="col-md-4 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
@@ -427,19 +423,7 @@
           <div class="row">
             <div class="col-md-4 form-group mt-3">
               <input type="datetime" name="date" class="form-control datepicker" id="date"
-                placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-
-
-
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select">
-                <option value="">Select Serves</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
+                placeholder="Desired Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
 
@@ -458,7 +442,6 @@
 
       </div>
     </section><!-- End Appointment Section -->
-
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact container">
