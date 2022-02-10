@@ -193,7 +193,7 @@ h6 {
 .appointment-btn {
   margin-left: 12px;
   background: #1977cc;
-  color: #fff;
+  color: #ffe100;
   border-radius: 50px;
   padding: 8px 25px;
   white-space: nowrap;
@@ -1577,4 +1577,9 @@ li.opening-hours_days {
 
 .rating-btn i {
   margin: 0 5px 0 0;
+}
+
+.phonenumber {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 16px;
 }
