@@ -274,10 +274,11 @@ document.querySelector(".appointment-form").addEventListener("submit", (e) => {
     date,
   };
 
-  console.log(payload);
-
   fetch("https://bwd-email-server.herokuapp.com/", {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(payload),
   })
     .then((res) => {
