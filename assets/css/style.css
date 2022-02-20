@@ -1620,5 +1620,23 @@ li.opening-hours_days {
 
   .pic {
     margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .doctors .member {
+    padding: 0;
+  }
+
+  .member-info {
+    padding: 20px;
+  }
+
+  .why-us .content {
+    width: 100%;
+  }
+
+  .opening-hours {
+    margin: auto;
+    width: 300px;
   }
 }
