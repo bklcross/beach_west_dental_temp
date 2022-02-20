@@ -1587,3 +1587,38 @@ li.opening-hours_days {
 #appointment .container {
   text-align: center;
 }
+
+.form-container {
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .rating-btn {
+    display: none;
+  }
+
+  #hero {
+    height: 500px;
+  }
+
+  #why-us .row > div {
+    justify-content: center;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-container .icon-box {
+    margin: 12px auto;
+    width: 330px;
+  }
+
+  .member {
+    flex-direction: column;
+  }
+
+  .pic {
+    margin-bottom: 32px;
+  }
+}
