@@ -260,6 +260,9 @@ checkDay();
 
 document.querySelector(".appointment-form").addEventListener("submit", (e) => {
   e.preventDefault();
+
+  console.log("form submit triggered");
+
   const email = document.querySelector("#email").value;
   const name = document.querySelector("#name").value;
   const tel = document.querySelector("#tel").value;
@@ -274,6 +277,8 @@ document.querySelector(".appointment-form").addEventListener("submit", (e) => {
     date,
   };
 
+  console.log(payload);
+
   fetch("https://bwd-email-server.herokuapp.com/", {
     method: "POST",
     headers: {
@@ -285,6 +290,7 @@ document.querySelector(".appointment-form").addEventListener("submit", (e) => {
       return res.json();
     })
     .then((data) => {
+      console.log("data: ", data);
       if (data.status === "success") {
         document.querySelector("#appointment .container").innerHTML =
           "<span>You appointment request was successfully submitted. We will be contacting you soon</span>";
