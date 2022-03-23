@@ -20,7 +20,7 @@
 
   <!-- bootstrap cdn -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -52,8 +52,12 @@
       <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo.svg"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
+        <div class="burger"> 
+          <span class="burger__line burger__line--top"></span>
+          <span class="burger__line burger__line--center"></span>
+          <span class="burger__line burger__line--bottom"></span>
+        </div>
+           <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -83,16 +87,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
-      <div class="rating-btn">
-        <a href="https://www.yelp.com/biz/beach-and-west-dental-westminster-3" class="appointment-btn scrollto"
-          target="_blank"><span class="d-none d-md-inline"><i class="fab fa-yelp"></i>5 Stars on Yelp</span></a>
-        <a href="https://www.google.com/search?q=BEACH+%26+WEST+DENTAL&rlz=1C1CHBF_enUS981US981&oq=beach&aqs=chrome.0.69i59j69i57j46i199i465i512j69i60l2j69i61j69i60l2.2997j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80dd271a3cacd6f3:0xa726a06d43873db1,1,,,"
-          class="appointment-btn scrollto" target="_blank"><span class="d-none d-md-inline"><i
-              class="fab fa-google"></i>5
-            Stars on Google</span></a>
-      </div>
-
     </div>
   </header><!-- End Header -->
 
@@ -102,7 +96,17 @@
       <h1>Welcome to Beach & West Dental</h1>
       <h2>A better life starts with a beautiful smile.</h2>
 
-      <a href="tel:(714) 894-0574" class="btn-get-started scrollto">Call Us At <span class="phonenumber">(714) 894-0574</span></a>
+      <div>
+        <a href="tel:(714) 894-0574" class="btn-get-started scrollto">Call Us At <span class="phonenumber">(714) 894-0574</span></a>
+        <div class="rating-btn">
+          <a href="https://www.yelp.com/biz/beach-and-west-dental-westminster-3" class="appointment-btn scrollto"
+            target="_blank"><span class="d-none d-md-inline"><i class="fab fa-yelp"></i>5 Stars on Yelp</span></a>
+          <a href="https://www.google.com/search?q=BEACH+%26+WEST+DENTAL&rlz=1C1CHBF_enUS981US981&oq=beach&aqs=chrome.0.69i59j69i57j46i199i465i512j69i60l2j69i61j69i60l2.2997j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80dd271a3cacd6f3:0xa726a06d43873db1,1,,,"
+            class="appointment-btn scrollto" target="_blank"><span class="d-none d-md-inline"><i
+                class="fab fa-google"></i>5
+              Stars on Google</span></a>
+        </div>
+      </div>
       <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
     </div>
   </section><!-- End Hero -->
@@ -165,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-8 d-flex align-items-stretch">
+          <div class="col-12 col-lg-8 align-items-stretch">
             <!-- ======= Doctors Section ======= -->
             <section id="doctors" class="doctors">
               <div class="container">
@@ -176,11 +180,9 @@
                 </div>
 
                 <div class="row">
-
-                  <div class="col-lg-12">
                     <div class="member d-flex align-items-start">
-                      <div class="pic"><img src="assets/img/dentist/kim.jpg" class="center" alt=""></div>
-                      <div class="member-info">
+                      <div class="pic col-12 col-lg-4"><img src="assets/img/dentist/kim.jpg" class="center" alt=""></div>
+                      <div class="member-info col-12 col-lg-6">
                         <h4> Dr. Kei Kim, DDS</h4>
                         <span>Dentist in Beach & West Dental</span>
                         <p>Dr. Kei Kim earned her DDS from the University of California San Francisco in 2010.
@@ -195,7 +197,6 @@
                           with her family, friends, and her cute dog, Boree. </p>
 
                       </div>
-                    </div>
                   </div>
 
 
@@ -286,7 +287,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="far fa-grin-beam"></i></div>
               <h4>Exam and cleaning</h4>
@@ -298,7 +299,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-teeth-open"></i></div>
               <h4>Teeth whitening</h4>
@@ -310,7 +311,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-tooth"></i></div>
               <h4>Tooth colored filling</h4>
@@ -324,7 +325,7 @@
 
 
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-teeth-open"></i></div>
               <h4>Implant restoration</h4>
@@ -336,7 +337,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-tooth"></i></div>
               <h4>Crown and Bridge</h4>
@@ -351,7 +352,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-tooth"></i></div>
               <h4>Denture</h4>
@@ -364,7 +365,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="far fa-smile-wink"></i></div>
               <h4>Invisalign</h4>

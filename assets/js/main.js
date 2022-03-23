@@ -254,3 +254,9 @@ document.querySelector(".appointment-form").addEventListener("submit", (e) => {
       }
     });
 });
+
+const burger = document.querySelector('.burger');
+burger.addEventListener('click',()=>{
+    burger.classList.toggle('active');
+    document.querySelector(".navbar ul").classList.toggle('show');
+});
