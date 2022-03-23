@@ -1700,7 +1700,16 @@ li.opening-hours_days {
   transform: translate(0, -15px) rotate(-45deg);
 }
 
+.navbar li.appointment-btn {
+  display: none;
+}
+.appointment-btn:hover {
+  background: transparent;
+}
 @media screen and (max-width: 992px) {
+  .navbar li.appointment-btn {
+    display: flex;
+  }
   .burger {
     display: flex;
   }
@@ -1715,7 +1724,7 @@ li.opening-hours_days {
     background-color: #1977cc;
     justify-content: center;
     flex-direction: column;
-    padding: 0 32px 32px;
+    padding: 0 16px 16px;
   }
 
   .navbar .show li {
