@@ -1600,6 +1600,9 @@ li.opening-hours_days {
 }
 
 @media (max-width: 992px) {
+  .rating-btn {
+    display: none;
+  }
   #hero {
     height: 500px;
   }
